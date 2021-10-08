@@ -58,9 +58,9 @@ In our experiment, we train the ArSSR model on the HCP-1200 Dataset. In particul
 
 By using the pre-processed trainning set and validationset by ourselves from [[Google Drive]](https://drive.google.com/file/d/1xAAAPM3QBM6xxswdrVHb8auyECNrVdvz/view?usp=sharing), the pipline of training the ArSSR model can be divided into three steps:
 
-- unzip the downloaed file `data.zip`.
-- put the `data` in ArSSR directory.
-- run the following command.
+1. unzip the downloaed file `data.zip`.
+2. put the `data` in ArSSR directory.
+3. run the following command.
 
 ```shell
 python train.py -encoder_name [encoder_name] \
