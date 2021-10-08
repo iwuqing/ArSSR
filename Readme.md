@@ -48,13 +48,13 @@ where,
 - `is_gpu`  is the identification of whether to use GPU (<u>*0*</u>->CPU, <u>*1*</u>->GPU).
 -  `gpu` is the numer of GPU.
 
-## 2.  Training from Scratch
+## 3.  Training from Scratch
 
-### 2.1.  Data
+### 3.1.  Data
 
 In our experiment, we train the ArSSR model on the HCP-1200 Dataset. In particular, the HCP-1200 dataset is split into three parts: 780 training set, 111 validation set, and 222 testing set.  More details about the HCP-1200 can be found in our manuscript [[ArXiv]](www.baidu.com). And you can download the pre-processed training set and validation set [[Google Drive]](https://drive.google.com/file/d/1xAAAPM3QBM6xxswdrVHb8auyECNrVdvz/view?usp=sharing).
 
-### 2.2.  Training
+### 3.2.  Training
 
 By using the pre-processed trainning set and validationset by ourselves from [[Google Drive]](https://drive.google.com/file/d/1xAAAPM3QBM6xxswdrVHb8auyECNrVdvz/view?usp=sharing), the pipline of training the ArSSR model can be divided into three steps:
 
@@ -94,7 +94,7 @@ where,
 - `ss` is  the number of sampled voxel coordinates, i.e., *K* in Equ. 3 (default=8000).
 - `gpu` is the number of GPU.
 
-## 3.  Citation
+## 4.  Citation
 
 If you find our work useful in your research, please cite:
 
