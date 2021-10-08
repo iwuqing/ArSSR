@@ -27,12 +27,12 @@ In the *pre_trained_models* folder, we provide the three pre-trained ArSSR model
 
 ```shell
 python test.py -input_path [input_path] \
-			  -output_path [output_path] \
-			  -encoder_name [RDN, ResCNN, or SRResNet] \
-			  -pre_trained_model [pre_trained_model]
-			  -scale [scale] \
-			  -is_gpu [is_gpu] \
-			  -gpu [gpu]
+               -output_path [output_path] \
+               -encoder_name [RDN, ResCNN, or SRResNet] \
+               -pre_trained_model [pre_trained_model]
+               -scale [scale] \
+               -is_gpu [is_gpu] \
+               -gpu [gpu]
 ```
 
 where,
@@ -64,18 +64,18 @@ By using the pre-processed trainning set and validationset by ourselves from [[G
 
 ```shell
 python train.py -encoder_name [encoder_name] \
-			   -decoder_depth [decoder_depth]	\
-			   -decoder_width [decoder_width] \
-			   -feature_dim [feature_dim] \
-			   -hr_data_train [hr_data_train] \
-			   -hr_data_val [hr_data_val] \
-			   -lr [lr] \
-			   -lr_decay_epoch [lr_decay_epoch] \
-			   -epoch [epoch] \
-			   -summary_epoch [summary_epoch] \
-			   -bs [bs] \
-			   -ss [ss] \
-			   -gpu [gpu]
+                -decoder_depth [decoder_depth]	\
+                -decoder_width [decoder_width] \
+                -feature_dim [feature_dim] \
+                -hr_data_train [hr_data_train] \
+                -hr_data_val [hr_data_val] \
+                -lr [lr] \
+                -lr_decay_epoch [lr_decay_epoch] \
+                -epoch [epoch] \
+                -summary_epoch [summary_epoch] \
+                -bs [bs] \
+                -ss [ss] \
+                -gpu [gpu]
 ```
 
 where,
