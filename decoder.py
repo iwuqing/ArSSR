@@ -8,11 +8,11 @@
 import torch.nn as nn
 
 
-#-------------------------------
+# -------------------------------
 # decoder implemented by a simple MLP
-#-------------------------------
+# -------------------------------
 class MLP(nn.Module):
-    def __init__(self, in_dim=128+3, out_dim=1, depth=4, width=256):
+    def __init__(self, in_dim=128 + 3, out_dim=1, depth=4, width=256):
         super(MLP, self).__init__()
         stage_one = []
         stage_two = []
@@ -20,7 +20,7 @@ class MLP(nn.Module):
             if i == 0:
                 stage_one.append(nn.Linear(in_dim, width))
                 stage_two.append(nn.Linear(in_dim, width))
-            elif i == depth-1:
+            elif i == depth - 1:
                 stage_one.append(nn.Linear(width, in_dim))
                 stage_two.append(nn.Linear(width, out_dim))
             else:
@@ -33,4 +33,4 @@ class MLP(nn.Module):
 
     def forward(self, x):
         h = self.stage_one(x)
-        return self.stage_two(x+h)
+        return self.stage_two(x + h)
