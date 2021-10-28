@@ -99,16 +99,13 @@ where,
 If you find our work useful in your research, please cite:
 
 ```latex
-@inproceedings{sitzmann2019siren,
-    author = {Sitzmann, Vincent
-              and Martel, Julien N.P.
-              and Bergman, Alexander W.
-              and Lindell, David B.
-              and Wetzstein, Gordon},
-    title = {Implicit Neural Representations
-              with Periodic Activation Functions},
-    booktitle = {arXiv},
-    year={2020}
+@misc{wu2021arbitrary,
+      title={An Arbitrary Scale Super-Resolution Approach for 3-Dimensional Magnetic Resonance Image using Implicit Neural Representation}, 
+      author={Qing Wu and Yuwei Li and Yawen Sun and Yan Zhou and Hongjiang Wei and Jingyi Yu and Yuyao Zhang},
+      year={2021},
+      eprint={2110.14476},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
 }
 ```
 
