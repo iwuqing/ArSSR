@@ -1,6 +1,6 @@
 # ArSSR
 
-This repository is the pytorch implementation of our manuscript "An Arbitrary Scale Super-Resolution Approach for 3D MR Images using Implicit Neural Representation" [[ArXiv]](www.baidu.com).
+This repository is the pytorch implementation of our manuscript "An Arbitrary Scale Super-Resolution Approach for 3D MR Images using Implicit Neural Representation" [[ArXiv]](https://arxiv.org/abs/2110.14476).
 
 ![pipline](./fig/pipeline.png)
 
@@ -52,7 +52,7 @@ where,
 
 ### 3.1.  Data
 
-In our experiment, we train the ArSSR model on the HCP-1200 Dataset. In particular, the HCP-1200 dataset is split into three parts: 780 training set, 111 validation set, and 222 testing set.  More details about the HCP-1200 can be found in our manuscript [[ArXiv]](www.baidu.com). And you can download the pre-processed training set and validation set [[Google Drive]](https://drive.google.com/file/d/1xAAAPM3QBM6xxswdrVHb8auyECNrVdvz/view?usp=sharing).
+In our experiment, we train the ArSSR model on the HCP-1200 Dataset. In particular, the HCP-1200 dataset is split into three parts: 780 training set, 111 validation set, and 222 testing set.  More details about the HCP-1200 can be found in our manuscript [[ArXiv]](https://arxiv.org/abs/2110.14476). And you can download the pre-processed training set and validation set [[Google Drive]](https://drive.google.com/file/d/1xAAAPM3QBM6xxswdrVHb8auyECNrVdvz/view?usp=sharing).
 
 ### 3.2.  Training
 
