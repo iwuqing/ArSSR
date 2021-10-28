@@ -1,6 +1,6 @@
 # ArSSR
 
-This repository is the pytorch implementation of our manuscript "An Arbitrary Scale Super-Resolution Approach for 3D MR Images using Implicit Neural Representation" [[ArXiv]](https://arxiv.org/abs/2110.14476).
+This repository is the pytorch implementation of our manuscript "An Arbitrary Scale Super-Resolution Approach for 3-Dimensional Magnetic Resonance Image using Implicit Neural Representation" [[ArXiv]](https://arxiv.org/abs/2110.14476).
 
 ![pipline](./fig/pipeline.png)
 
