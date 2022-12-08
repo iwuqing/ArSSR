@@ -1,14 +1,14 @@
 # ArSSR
 
-This repository is the PyTorch implementation of our manuscript "An Arbitrary Scale Super-Resolution Approach for 3-Dimensional Magnetic Resonance Image using Implicit Neural Representation".
+This repository is the PyTorch implementation of our manuscript "An Arbitrary Scale Super-Resolution Approach for 3D MR Images via Implicit Neural Representation". [[ArXiv](https://arxiv.org/abs/2110.14476), [IEEE Explore](https://ieeexplore.ieee.org/abstract/document/9954892)]
 
 ![pipline](./fig/pipeline.png)
 
 *Figure 1: Overview of the ArSSR model.*
 
-## Abstract
+## An Example
 
-High Resolution (HR) medical images provide rich anatomical structure details to facilitate early and accurate diagnosis. In magnetic resonance imaging (MRI), restricted by hardware capacity, scan time, and patient cooperation ability, isotropic 3-dimensional (3D) HR image acquisition typically requests long scan time and, results in small spatial coverage and low signal-to-noise ratio (SNR). Recent studies showed that, with deep convolutional neural networks, isotropic HR MR images could be recovered from low-resolution (LR) input via single image super-resolution (SISR) algorithms. However, most existing SISR methods tend to approach a scale-specific projection between LR and HR images, thus these methods can only deal with a fixed up-sampling rate. For achieving different up-sampling rates, multiple SR networks have to be built up respectively, which is very time-consuming and resource-intensive. In this paper, we propose ArSSR, an **Ar**bitrary **S**cale **S**uper-**R**esolution approach for recovering 3D HR MR images. In the ArSSR model, the reconstruction of HR images with different up-scaling rates is defined as learning a continuous implicit voxel function from the observed LR images. Then the SR task is converted to represent the implicit voxel function via deep neural networks from a set of paired HR and LR training examples. The ArSSR model consists of an encoder network and a decoder network. Specifically, the convolutional encoder network is to extract feature maps from the LR input images and the fully-connected decoder network is to approximate the implicit voxel function. Due to the continuity of the learned function, a *single* ArSSR model can achieve arbitrary up-sampling rate reconstruction of HR images from any input LR image after training. Experimental results on three datasets show that the ArSSR model can achieve state-of-the-art SR performance for 3D HR MR image reconstruction while using a single trained model to achieve arbitrary up-sampling scales. **All the NIFTI data about Figure 2 can be downloaded in [LR image](https://drive.google.com/file/d/1C_mMB4Lpu530zmgBE343MxULBKNzKsev/view?usp=sharing), [2x SR result](https://drive.google.com/file/d/1H_rbVgvdxtTTEcuYF4hPxZ93I4UUT6J2/view?usp=sharing), [3.2x SR result](https://drive.google.com/file/d/1BCj-YdPz6ta5-UONqc8Yl_4i3sYa6mZY/view?usp=sharing), [4x SR result](https://drive.google.com/file/d/1Mnzp4DK-GHJxF962VJa7iOHT5adlBdET/view?usp=sharing).** 
+ **The MR images shown in Figure 2 can be downloaded in [LR image](https://drive.google.com/file/d/1C_mMB4Lpu530zmgBE343MxULBKNzKsev/view?usp=sharing), [2x SR result](https://drive.google.com/file/d/1H_rbVgvdxtTTEcuYF4hPxZ93I4UUT6J2/view?usp=sharing), [3.2x SR result](https://drive.google.com/file/d/1BCj-YdPz6ta5-UONqc8Yl_4i3sYa6mZY/view?usp=sharing), [4x SR result](https://drive.google.com/file/d/1Mnzp4DK-GHJxF962VJa7iOHT5adlBdET/view?usp=sharing).** 
 
 ![example](./fig/ex.png)
 
@@ -101,14 +101,14 @@ where,
 If you find our work useful in your research, please cite:
 
 ```latex
-@misc{wu2021arbitrary,
-      title={An Arbitrary Scale Super-Resolution Approach for 3-Dimensional Magnetic Resonance Image using Implicit Neural Representation}, 
-      author={Qing Wu and Yuwei Li and Yawen Sun and Yan Zhou and Hongjiang Wei and Jingyi Yu and Yuyao Zhang},
-      year={2021},
-      eprint={2110.14476},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
-}
+@ARTICLE{9954892,  
+author={Wu, Qing and Li, Yuwei and Sun, Yawen and Zhou, Yan and Wei, Hongjiang and Yu, Jingyi and Zhang, Yuyao},  journal={IEEE Journal of Biomedical and Health Informatics},   
+title={An Arbitrary Scale Super-Resolution Approach for 3D MR Images via Implicit Neural Representation},   
+year={2022},  
+volume={},  
+number={},  
+pages={1-12},  
+doi={10.1109/JBHI.2022.3223106}}
 ```
 
 
