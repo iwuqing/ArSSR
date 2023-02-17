@@ -101,14 +101,15 @@ where,
 If you find our work useful in your research, please cite:
 
 ```latex
-@ARTICLE{9954892,  
-author={Wu, Qing and Li, Yuwei and Sun, Yawen and Zhou, Yan and Wei, Hongjiang and Yu, Jingyi and Zhang, Yuyao},  journal={IEEE Journal of Biomedical and Health Informatics},   
-title={An Arbitrary Scale Super-Resolution Approach for 3D MR Images via Implicit Neural Representation},   
-year={2022},  
-volume={},  
-number={},  
-pages={1-12},  
-doi={10.1109/JBHI.2022.3223106}}
+@ARTICLE{9954892,
+  author={Wu, Qing and Li, Yuwei and Sun, Yawen and Zhou, Yan and Wei, Hongjiang and Yu, Jingyi and Zhang, Yuyao},
+  journal={IEEE Journal of Biomedical and Health Informatics}, 
+  title={An Arbitrary Scale Super-Resolution Approach for 3D MR Images via Implicit Neural Representation}, 
+  year={2023},
+  volume={27},
+  number={2},
+  pages={1004-1015},
+  doi={10.1109/JBHI.2022.3223106}}
 ```
 
 
