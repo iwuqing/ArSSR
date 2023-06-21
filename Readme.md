@@ -30,7 +30,7 @@ In the *pre_trained_models* folder, we provide the three pre-trained ArSSR model
 ```shell
 python test.py -input_path [input_path] \
                -output_path [output_path] \
-               -encoder_name [RDN, ResCNN, or SRResNet] \
+               -encoder [RDN, ResCNN, or SRResNet] \
                -pre_trained_model [pre_trained_model]
                -scale [scale] \
                -is_gpu [is_gpu] \
